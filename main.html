@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+
+<body>
+
+<div data-role="page" id="dashboard">
+  <div data-role="header" data-position="fixed">
+    <h1>Sixth Sense</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <div class="ui-grid-a">
+		<div class="ui-block-a"><a href="#fridge-big" class="ui-btn ui-btn-inline" data-transition="slideup">Big Fridge</a></div>
+		<div class="ui-block-b"><a href="#group-ovens" data-rel="popup" class="ui-btn ui-btn-inline" data-position-to="window" data-transition="pop">Ovens</a></div>
+		<div class="ui-block-a"><a href="#fridge-front" class="ui-btn ui-btn-inline" data-transition="slideup">Front Fridge</a></div>			
+	</div>
+  </div>
+
+	<div data-role="popup" id="group-ovens" data-arrow="t">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+
+		<div data-role="header" data-position="fixed">
+			<h1>Ovens</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><a href="#oven-01" class="ui-btn ui-btn-inline">Oven 1</a></div>
+				<div class="ui-black-b"><a href="#oven-02" class="ui-btn ui-btn-inline">Oven 2</a></div>
+				<div class="ui-block-a"><a href="#oven-03" class="ui-btn ui-btn-inline">Oven 3</a></div>
+				<div class="ui-block-b"><a href="#oven-04" class="ui-btn ui-btn-inline">Oven 4</a></div>
+			</div>
+		</div>
+	</div>
+
+  <div data-role="footer" data-position="fixed">
+    <a href="#edit" class="ui-btn-right">Edit</a>
+  </div>
+</div> 
+
+
+<div data-role="page" id="fridge-big">
+  <div data-role="header" data-position="fixed">
+    <h1><a href="#" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-left ui-btn-icon-notext ui-nodisc-icon ui-alt-icon" data-rel="back">&lt;</a> Big Fridge</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Data and stuff</p>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+	<a href="#edit" class="ui-btn-right">Edit</a>
+  </div>
+</div>
+
+
+<div data-role="page" id="fridge-front">
+  <div data-role="header" data-position="fixed">
+    <h1><a href="#" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-left ui-btn-icon-notext ui-nodisc-icon ui-alt-icon" data-rel="back">&lt;</a>Front Fridge</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Data and stuff</p>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+	<a href="#edit" class="ui-btn-right">Edit</a>
+  </div>
+</div>
+	
+
+</body>
+</html>
