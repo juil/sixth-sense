@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Sixth</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -9,10 +11,11 @@
 
 
 <body>
-
-<div data-role="page" id="dashboard">
+	<!--Dashboard page-->
+	<div data-role="page" id="dashboard">
   <div data-role="header" data-position="fixed">
     <h1>Sixth Sense</h1>
+	<a href="#settings" class="ui-btn ui-btn-inline ui-icon-gear ui-btn-right ui-btn-icon-notext ui-nodisc-icon ui-alt-icon">*</a>
   </div>
 
   <div data-role="main" class="ui-content">
@@ -30,6 +33,7 @@
 			<h1>Ovens</h1>
 		</div>
 
+		<!--Popup for more ovens-->
 		<div data-role="main" class="ui-content">
 			<div class="ui-grid-a">
 				<div class="ui-block-a"><a href="#oven-01" class="ui-btn ui-btn-inline">Oven 1</a></div>
@@ -39,13 +43,37 @@
 			</div>
 		</div>
 	</div>
-
+	
   <div data-role="footer" data-position="fixed">
     <a href="#edit" class="ui-btn-right">Edit</a>
   </div>
 </div> 
 
+<!--Settings Page-->
+<div data-role="page" id="settings">
+  <div data-role="header" data-position="fixed">
+    <h1><a href="#" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-left ui-btn-icon-notext ui-nodisc-icon ui-alt-icon" data-rel="back">&lt;</a>Settings</h1>
+  </div>
 
+  <div data-role="main" class="ui-content">
+    <ul data-role="listview">
+		<li><a href="#">User Profile</a></li>
+	</ul>
+	<ul data-role="listview">
+		<li>BlueRover</li>
+		<li>Sensors</li>
+	</ul>
+	<ul data-role="listview">
+		<li>Contractors</li>
+	</ul>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+	<a href="#edit" class="ui-btn-right">Edit</a>
+  </div>
+</div>
+
+<!--Big Fridge Page-->
 <div data-role="page" id="fridge-big">
   <div data-role="header" data-position="fixed">
     <h1><a href="#" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-left ui-btn-icon-notext ui-nodisc-icon ui-alt-icon" data-rel="back">&lt;</a> Big Fridge</h1>
@@ -60,7 +88,7 @@
   </div>
 </div>
 
-
+<!--Front Fridge Page-->
 <div data-role="page" id="fridge-front">
   <div data-role="header" data-position="fixed">
     <h1><a href="#" class="ui-btn ui-btn-inline ui-icon-arrow-l ui-btn-left ui-btn-icon-notext ui-nodisc-icon ui-alt-icon" data-rel="back">&lt;</a>Front Fridge</h1>
@@ -74,7 +102,7 @@
 	<a href="#edit" class="ui-btn-right">Edit</a>
   </div>
 </div>
-	
 
+<script src="Scripts/main.js" type="text/javascript"></script>
 </body>
 </html>
